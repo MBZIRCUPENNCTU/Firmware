@@ -211,6 +211,10 @@ if(UNIX AND APPLE)
 			)
 	endif()
 
+	if (CMAKE_CXX_COMPILER_VERSION VERSION_LESS 8.0)
+		message(FATAL_ERROR "PX4 Firmware requires XCode 8 or newer on Mac OS. Version installed on this system: ${CMAKE_CXX_COMPILER_VERSION}")
+	endif()
+
 else()
 
         set(added_definitions
