@@ -141,13 +141,13 @@ int test_jig_voltages(int argc, char *argv[])
 
 		PX4_INFO("Sample:");
 		PX4_INFO("channel: %d value: %d (allowed min: %d, allowed max: %d), result: %s",
-			data[0].am_channel, (int)(data[0].am_data), expected_min[0], expected_max[0], check_res[0]);
+			 data[0].am_channel, (int)(data[0].am_data), expected_min[0], expected_max[0], check_res[0]);
 		PX4_INFO("channel: %d value: %d (allowed min: %d, allowed max: %d), result: %s",
-			data[1].am_channel, (int)(data[1].am_data), expected_min[1], expected_max[1], check_res[1]);
+			 data[1].am_channel, (int)(data[1].am_data), expected_min[1], expected_max[1], check_res[1]);
 		PX4_INFO("channel: %d value: %d (allowed min: %d, allowed max: %d), result: %s",
-			data[2].am_channel, (int)(data[2].am_data), expected_min[2], expected_max[2], check_res[2]);
+			 data[2].am_channel, (int)(data[2].am_data), expected_min[2], expected_max[2], check_res[2]);
 		PX4_INFO("channel: %d value: %d (allowed min: %d, allowed max: %d), result: %s",
-			data[3].am_channel, (int)(data[3].am_data), expected_min[3], expected_max[3], check_res[3]);
+			 data[3].am_channel, (int)(data[3].am_data), expected_min[3], expected_max[3], check_res[3]);
 
 		if (ret != OK) {
 			PX4_ERR("\t JIG voltages test FAILED. Some channels where out of allowed range. Check supply voltages.");
